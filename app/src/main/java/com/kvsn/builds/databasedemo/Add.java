@@ -17,6 +17,7 @@ public class Add extends AppCompatActivity
     }
     public void submit(View v)
     {
-
+        DB db = new DB(getApplicationContext());
+        db.insertvalues(et1.getText().toString(),Long.parseLong(et2.getText().toString()));
     }
 }
